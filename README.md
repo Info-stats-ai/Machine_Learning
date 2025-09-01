@@ -1,1 +1,2 @@
-# python_files
+#Concepts Learned:
+Complete ML and Basics of DL
