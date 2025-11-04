@@ -1,0 +1,166 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Omkarnath Thakur
+%------------------------
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure PDF is machine readable / ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in,label={},itemsep=4pt,topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in,labelsep=0.1in,itemsep=1.5pt,topsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Omkarnath Thakur} \\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faPhone\ 602-668-0832 ~ \href{mailto:othakur@umd.edu}{\raisebox{-0.2\height}\faEnvelope\ \underline{othakur@umd.edu}} ~
+    \href{https://www.linkedin.com/in/info-stats-ai/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/info-stats-ai}} ~
+    \href{https://github.com/Info-stats-ai}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Info-stats-ai}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading{University of Maryland, College Park}{Aug 2024 -- Dec 2025}{Master of Science in Data Science}{CGPA: 3.75/4.00}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.0in,label={},itemsep=1.5pt,topsep=2pt]
+      \item \small{\textbf{Languages:} Python, Java, SQL, R \hfill \textbf{Frameworks:} FastAPI, PyTorch, LangChain, Pandas, NumPy, Scikit-learn, Keras, TensorFlow}
+      \item \small{\textbf{Pipelines:} Machine Learning, Deep Learning, Generative AI, Computer Vision, NLP, Data Engineering \hfill \textbf{Platforms:} AWS, Bedrock, Docker, Kubernetes, Linux, Chroma DB, FAISS}
+      \item \small{\textbf{AI Tooling:} LangGraph, CrewAI, Hugging Face, Function Calling, Prompt Engineering, N8N, MLflow \hfill \textbf{Web Stack:} HTML, CSS, React, Node.js, Express, MongoDB, PostgreSQL, TypeScript}
+      \item \small{\textbf{Ops \& Monitoring:} ML Ops, CI/CD, GitHub Actions, Jenkins, DagsHub, Grafana, Real-time Observability}
+    \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{University of Maryland}{Jun 2025 -- Aug 2025}{Graduate Student Assistant, Computer Science}{College Park, MD}
+      \resumeItemListStart
+        \resumeItem{Situation -- Clinical analytics lab managed isolated ECG, EEG, and accelerometer streams that slowed multimodal neurocardiology trials.}
+        \resumeItem{Task -- Chartered OpenTSLM to unify signal embeddings with a Llama 3.2 reasoning layer delivering explainable diagnostics on demand.}
+        \resumeItem{Action -- Built a five-stage curriculum across TSQA, M4, HAR, SleepEDF, and ECG-QA with automated checkpoints and gradient tuning for CUDA and MPS.}
+        \resumeItem{Result -- Reduced diagnostic review cycles by 35\% while enabling conversational ECG analysis, sleep staging, and activity summaries with traceable logic.}
+      \resumeItemListEnd
+    \resumeSubheading{The Builder Market}{Jun 2025 -- Aug 2025}{Artificial Intelligence Product and Prototyping Intern}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Situation -- Marketplace operators juggled fragmented catalog, demand, and support data that prevented timely merchandising and assistance.}
+        \resumeItem{Task -- Committed to ship a hybrid semantic chatbot, resilient RAG stack, and live forecasting pipeline stitched across AWS EC2, S3, and OpenSearch.}
+        \resumeItem{Action -- Assembled React, Express, PostgreSQL, MongoDB, Brave API, and PEFT-tuned LLM agents with TypeScript fallbacks to suppress hallucinations.}
+        \resumeItem{Result -- Delivered production prototypes that automated intake, boosted search relevance 28\%, and accelerated pricing decisions with real-time XGBoost.}
+      \resumeItemListEnd
+    \resumeSubheading{Kamdhenu Robotics}{Jun 2021 -- Jul 2023}{Data Scientist}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Situation -- Factory robotics group faced unreliable heavy-vehicle detection and operator controls under occlusion and harsh industrial conditions.}
+        \resumeItem{Task -- Led modernization of perception and voice command stacks to raise detection accuracy, enable speech control, and generalize to new deployments.}
+        \resumeItem{Action -- Integrated OpenCV, Mask R-CNN, Cascade R-CNN, YOLOv8, Detectron, and CLIP pipelines with tailored segmentation and language embeddings.}
+        \resumeItem{Result -- Achieved 94\% detection precision, sub-300 ms voice response, and a 22\% uplift in predictive maintenance accuracy across fielded units.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Multi-Agent LLM System for Real-Time Deal Discovery}}{}
+      \resumeItemListStart
+        \resumeItem{Challenge -- Manual parsing of partner RSS feeds delayed deal discovery and kept revenue teams reacting to stale pricing opportunities.}
+        \resumeItem{Execution -- Built a GPT-4 CrewAI multi-agent workflow with Pydantic validation, Chroma DB retrieval, and 3D embedding inspection to rank live offers.}
+        \resumeItem{Outcome -- Reduced curation effort 90\%, improved product similarity accuracy 20\%, and cut price prediction error 15\% through Modal deployment with Gradio monitoring.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{Phishing Detection End-to-End ML Pipeline}}{}
+      \resumeItemListStart
+        \resumeItem{Challenge -- Security operations lacked a governed pipeline to evaluate malicious URLs consistently across streaming and batch workloads.}
+        \resumeItem{Execution -- Orchestrated FastAPI and CLI inference backed by Random Forest, Gradient Boosting, Logistic Regression, and AdaBoost with schema validation and unified logging.}
+        \resumeItem{Outcome -- Delivered MLflow-tracked releases achieving 85\% precision with automated best-model promotion and optional S3 artifact synchronization.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{CAF Bank AI Challenge}}{}
+      \resumeItemListStart
+        \resumeItem{Challenge -- Competition briefs demanded trustworthy financial insights synthesized from fragmented institutional and external knowledge bases.}
+        \resumeItem{Execution -- Built a scalable RAG workflow combining FAISS retrieval, BlendFilter reranking, and dynamic DuckDuckGo and Wikipedia augmentation with LangChain.}
+        \resumeItem{Outcome -- Produced secure multi-format briefings that raised reviewer relevance scores 18\% while meeting strict compliance and transparency guardrails.}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{UMBC Student Success Dashboard}}{}
+      \resumeItemListStart
+        \resumeItem{Challenge -- Advising teams lacked holistic visibility into student trajectories needed for timely interventions and targeted collaboration cohorts.}
+        \resumeItem{Execution -- Delivered a FastAPI and Neo4j graph backend with 500-student synthetic data, weighted similarity scoring, and modern glassmorphism web experience.}
+        \resumeItem{Outcome -- Enabled real-time analytics surfacing peer matches in under two seconds across 20,000 relationships with actionable retention insights.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Master in Machine Learning, Coding Blocks}}{\href{https://online.codingblocks.com/app/certificates/CBOL-299010-ae37babb}{[Certificate]}}
+    \resumeProjectHeading{\textbf{Complete Generative AI Bootcamp}}{\href{https://www.udemy.com/certificate/UC-f6bef3c0-4c25-4c03-afe6-cdacd43940cf/}{[Certificate]}}
+  \resumeSubHeadingListEnd
+
+\end{document}
